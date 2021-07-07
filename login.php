@@ -43,7 +43,7 @@ and open the template in the editor.
                             </div>
                                 <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="text" class="form-control" id="password" name="password">
+                                <input type="password" class="form-control" id="password" name="password">
                             </div>
                                 <button type="submit" class="btn btn-primary" value=”login_submit”>Login</button>
                             
