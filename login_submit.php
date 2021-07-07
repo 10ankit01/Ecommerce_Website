@@ -8,6 +8,7 @@ $login_submit = mysqli_query($con, $select_query) or die(mysqli_error($con));
 $num_rows = mysqli_num_rows($login_submit);
 if($num_rows == 0){
     echo "No user exist with email id $email";
+	header('Refresh:5 ; url:signup.php');
 }else{
     $row = mysqli_fetch_array($login_submit);
     $_SESSION['email'] = $row['email'];
